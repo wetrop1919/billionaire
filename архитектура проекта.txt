@@ -1,0 +1,211 @@
+billionaire_game/
+│
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── requirements-server.txt
+├── requirements-client.txt
+├── alembic.ini
+│
+├── shared/
+│   ├── __init__.py
+│   ├── constants.py          # ЭТАП 1 — ПЕРВЫЙ ФАЙЛ
+│   ├── enums.py               # ЭТАП 1
+│   ├── exceptions.py          # ЭТАП 1 (НОВЫЙ)
+│   ├── permissions.py         # ЭТАП 1 (НОВЫЙ)
+│   ├── env_config.py          # ЭТАП 1 (НОВЫЙ)
+│   ├── logger_config.py       # ЭТАП 1 (НОВЫЙ)
+│   ├── dice.py                # ЭТАП 2 (НОВЫЙ)
+│   ├── money.py               # ЭТАП 2 (НОВЫЙ)
+│   ├── game_rules.py          # ЭТАП 2 (НОВЫЙ)
+│   ├── property_utils.py      # ЭТАП 2 (НОВЫЙ)
+│   ├── card_actions.py        # ЭТАП 2 (НОВЫЙ)
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── user.py
+│   │   ├── property.py
+│   │   ├── card.py
+│   │   ├── event.py
+│   │   ├── position.py
+│   │   ├── trade.py
+│   │   ├── room.py
+│   │   └── game.py
+│   ├── protocol/
+│   │   ├── __init__.py
+│   │   ├── version.py
+│   │   ├── packet_types.py
+│   │   ├── serializer.py
+│   │   ├── compression.py
+│   │   ├── crypto.py
+│   │   └── packet.py
+│   └── validators.py
+│
+├── server/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── container.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── schema_validator.py
+│   │   ├── config_manager.py
+│   │   └── hot_reloader.py
+│   ├── network/
+│   │   ├── __init__.py
+│   │   ├── tcp_server.py
+│   │   ├── ssl_context.py
+│   │   ├── session_manager.py
+│   │   └── message_dispatcher.py
+│   ├── auth/
+│   │   ├── __init__.py
+│   │   ├── auth_manager.py
+│   │   ├── token_manager.py
+│   │   └── refresh_manager.py
+│   ├── game/
+│   │   ├── __init__.py
+│   │   ├── game_manager.py
+│   │   ├── game_engine.py
+│   │   ├── game_loop.py
+│   │   ├── turn_manager.py
+│   │   ├── state_machine.py     # НОВЫЙ
+│   │   ├── auction_manager.py
+│   │   ├── trade_manager.py
+│   │   ├── jail_manager.py
+│   │   ├── veranda_manager.py
+│   │   ├── bankruptcy_manager.py
+│   │   ├── undo_stack.py
+│   │   └── ai/
+│   │       ├── __init__.py
+│   │       ├── base_bot.py
+│   │       └── simple_bot.py
+│   ├── room/
+│   │   ├── __init__.py
+│   │   ├── room_manager.py
+│   │   └── observer_manager.py
+│   ├── chat/
+│   │   ├── __init__.py
+│   │   └── chat_manager.py
+│   ├── event/
+│   │   ├── __init__.py
+│   │   ├── event_bus.py
+│   │   ├── event_types.py
+│   │   ├── event_logger.py
+│   │   └── replay_manager.py
+│   ├── backup/
+│   │   ├── __init__.py
+│   │   ├── backup_manager.py
+│   │   ├── crash_recovery.py
+│   │   └── autosave.py
+│   ├── scheduler/
+│   │   ├── __init__.py
+│   │   └── scheduler.py
+│   ├── admin/
+│   │   ├── __init__.py
+│   │   └── admin_commands.py
+│   └── middleware/
+│       ├── __init__.py
+│       ├── security_middleware.py
+│       ├── rate_limiter.py
+│       └── packet_validator.py
+│
+├── client/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── container.py
+│   ├── config.py
+│   ├── assets/
+│   │   ├── __init__.py
+│   │   └── asset_manager.py
+│   ├── network/
+│   │   ├── __init__.py
+│   │   ├── network_client.py
+│   │   └── reconnection_manager.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── game_model.py
+│   │   ├── player_model.py
+│   │   ├── room_model.py
+│   │   └── chat_model.py
+│   ├── viewmodels/              # БЫЛО controllers/
+│   │   ├── __init__.py
+│   │   ├── connection_viewmodel.py
+│   │   ├── room_viewmodel.py
+│   │   ├── game_viewmodel.py
+│   │   └── chat_viewmodel.py
+│   └── views/
+│       ├── __init__.py
+│       ├── main_window.py
+│       ├── main_menu.py
+│       ├── connection_dialog.py
+│       ├── room_list.py
+│       ├── create_room_dialog.py
+│       ├── game_board.py
+│       ├── player_panel.py
+│       ├── chat_widget.py
+│       ├── game_window.py
+│       ├── settings_dialog.py
+│       ├── history_dialog.py
+│       ├── profile_dialog.py
+│       ├── admin_panel.py
+│       └── replay_viewer.py
+│
+├── database/
+│   ├── __init__.py
+│   ├── connection.py            # SQLAlchemy async engine
+│   ├── models.py                # ORM модели (SQLAlchemy)
+│   └── repositories/
+│       ├── __init__.py
+│       ├── base_repository.py
+│       └── postgresql/
+│           ├── __init__.py
+│           ├── user_repository.py
+│           ├── room_repository.py
+│           ├── game_repository.py
+│           ├── chat_repository.py
+│           └── event_repository.py
+│
+├── alembic/
+│   ├── env.py
+│   ├── script.py.mako
+│   └── versions/
+│
+├── configs/
+│   ├── server/
+│   │   ├── server.json
+│   │   ├── network.json
+│   │   └── security.json
+│   ├── game/
+│   │   ├── board.json
+│   │   ├── cards/
+│   │   │   ├── chance.json
+│   │   │   └── fund.json
+│   │   ├── properties/
+│   │   │   ├── properties.json
+│   │   │   ├── stations.json
+│   │   │   └── utilities.json
+│   │   └── rules.json
+│   └── client/
+│       └── client.json
+│
+├── translations/
+│   ├── ru.json
+│   ├── en.json
+│   └── translation_manager.py
+│
+├── assets/
+│   ├── images/
+│   ├── sounds/
+│   ├── fonts/
+│   └── styles/
+│
+├── deploy/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── .dockerignore
+│   └── billionaire-server.service
+│
+├── tests/
+├── docs/
+├── logs/
+├── backups/
+└── README.md
