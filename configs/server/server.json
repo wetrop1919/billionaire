@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "data": {
+    "host": "0.0.0.0",
+    "port": 8443,
+    "log_level": "INFO",
+    "log_dir": "logs",
+    "backup_dir": "backups",
+    "backup_retention_days": 30,
+    "max_rooms_per_user": 5,
+    "room_cleanup_timeout_seconds": 600,
+    "debug": false,
+    "environment": "production"
+  }
+}

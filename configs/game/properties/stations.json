@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "data": {
+    "railroad_1": {
+      "property_id": "railroad_1",
+      "name": "Железнодорожная станция №1",
+      "type": "railroad",
+      "price": 200,
+      "rent": [25, 50, 100, 200],
+      "mortgage_value": 100,
+      "position": 5
+    },
+    "railroad_2": {
+      "property_id": "railroad_2",
+      "name": "Железнодорожная станция №2",
+      "type": "railroad",
+      "price": 200,
+      "rent": [25, 50, 100, 200],
+      "mortgage_value": 100,
+      "position": 15
+    },
+    "railroad_3": {
+      "property_id": "railroad_3",
+      "name": "Железнодорожная станция №3",
+      "type": "railroad",
+      "price": 200,
+      "rent": [25, 50, 100, 200],
+      "mortgage_value": 100,
+      "position": 25
+    },
+    "railroad_4": {
+      "property_id": "railroad_4",
+      "name": "Железнодорожная станция №4",
+      "type": "railroad",
+      "price": 200,
+      "rent": [25, 50, 100, 200],
+      "mortgage_value": 100,
+      "position": 35
+    }
+  }
+}

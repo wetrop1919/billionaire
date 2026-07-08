@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "data": {
+    "economy": {
+      "start_money": 1500,
+      "start_bonus": 200,
+      "max_players": 4,
+      "min_players": 2,
+      "turn_timeout_seconds": 60,
+      "min_turn_timeout_seconds": 15,
+      "max_turn_timeout_seconds": 300
+    },
+    "jail": {
+      "jail_cell_id": 10,
+      "jail_fine": 50,
+      "max_rounds_in_jail": 2,
+      "doubles_for_jail": 3
+    },
+    "veranda": {
+      "exit_cost": 50,
+      "description": "Специальная клетка вне поля. Попасть можно только по карточке Шанс или Фонд. Для выхода нужно заплатить 50$ или использовать карточку."
+    },
+    "auction": {
+      "enabled": true,
+      "start_price_ratio": 0.5,
+      "timeout_seconds": 180,
+      "min_bid_increment": 1
+    },
+    "trade": {
+      "enabled": true,
+      "timeout_seconds": 120,
+      "min_loan_percent": 0,
+      "max_loan_percent": 50
+    },
+    "building": {
+      "enabled": true,
+      "max_houses_per_property": 4,
+      "hotel_requires_houses": 4,
+      "even_build_required": false,
+      "mortgage_unmortgage_ratio": 1.1
+    },
+    "cards": {
+      "chance_enabled": true,
+      "fund_enabled": true
+    },
+    "free_parking": {
+      "bonus": 0
+    },
+    "spectators": {
+      "allow_spectators": true,
+      "spectator_chat": true
+    },
+    "bankruptcy": {
+      "description": "Игрок объявляется банкротом, если не может заплатить долг и у него закончилось имущество для продажи. Имущество банкрота возвращается банку. Если долг перед другим игроком — передаётся часть имущества, равная долгу."
+    },
+    "game_end": {
+      "description": "Игра заканчивается, когда один из игроков выбывает или выходит из игры. Победителем становится игрок с наибольшим количеством денег."
+    }
+  }
+}

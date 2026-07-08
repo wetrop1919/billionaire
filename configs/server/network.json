@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "data": {
+    "ssl": {
+      "enabled": true,
+      "cert_path": "certs/server.crt",
+      "key_path": "certs/server.key",
+      "ca_path": ""
+    },
+    "connection": {
+      "max_connections": 1000,
+      "buffer_size": 65536,
+      "connection_timeout_seconds": 10.0,
+      "read_timeout_seconds": 30.0,
+      "write_timeout_seconds": 10.0,
+      "session_idle_timeout_seconds": 300.0
+    },
+    "heartbeat": {
+      "interval_seconds": 15.0,
+      "timeout_seconds": 10.0,
+      "max_missed_heartbeats": 3
+    },
+    "ping": {
+      "interval_seconds": 10.0
+    },
+    "reconnection": {
+      "window_seconds": 30.0,
+      "max_attempts": 5,
+      "initial_delay_seconds": 3.0,
+      "backoff_multiplier": 1.5,
+      "max_delay_seconds": 30.0
+    },
+    "rate_limiting": {
+      "max_packets_per_second": 50,
+      "max_chat_messages_per_second": 3,
+      "max_auth_attempts_per_minute": 10,
+      "window_seconds": 1.0
+    }
+  }
+}

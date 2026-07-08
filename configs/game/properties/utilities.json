@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "data": {
+    "utility_1": {
+      "property_id": "utility_1",
+      "name": "Электростанция",
+      "type": "utility",
+      "price": 150,
+      "rent_multipliers": [4, 10],
+      "mortgage_value": 75,
+      "position": 12
+    },
+    "utility_2": {
+      "property_id": "utility_2",
+      "name": "Водопроводная станция",
+      "type": "utility",
+      "price": 150,
+      "rent_multipliers": [4, 10],
+      "mortgage_value": 75,
+      "position": 28
+    }
+  }
+}

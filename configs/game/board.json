@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "data": {
+    "board_size": 40,
+    "cells": [
+      {
+        "cell_id": 0,
+        "name": "Старт",
+        "type": "start",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 1,
+        "name": "Сивка-бурка",
+        "type": "property",
+        "property_id": "sivka_burka",
+        "action": null,
+        "action_data": {},
+        "position_x": 9,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 2,
+        "name": "Шанс",
+        "type": "chance",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "chance"},
+        "position_x": 8,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 3,
+        "name": "Конёк-горбунок",
+        "type": "property",
+        "property_id": "konek_gorbunok",
+        "action": null,
+        "action_data": {},
+        "position_x": 7,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 4,
+        "name": "Подоходный налог",
+        "type": "tax",
+        "property_id": null,
+        "action": "pay_tax",
+        "action_data": {"amount": 200, "is_percentage": false},
+        "position_x": 6,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 5,
+        "name": "Железнодорожная станция",
+        "type": "property",
+        "property_id": "railroad_1",
+        "action": null,
+        "action_data": {},
+        "position_x": 5,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 6,
+        "name": "Лиса Патрикеевна",
+        "type": "property",
+        "property_id": "lisa_patrikeevna",
+        "action": null,
+        "action_data": {},
+        "position_x": 4,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 7,
+        "name": "Фонд",
+        "type": "fund",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "fund"},
+        "position_x": 3,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 8,
+        "name": "Кот в сапогах",
+        "type": "property",
+        "property_id": "kot_v_sapogah",
+        "action": null,
+        "action_data": {},
+        "position_x": 2,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 9,
+        "name": "Красная шапочка",
+        "type": "property",
+        "property_id": "krasnaya_shapochka",
+        "action": null,
+        "action_data": {},
+        "position_x": 1,
+        "position_y": 10,
+        "side": 0
+      },
+      {
+        "cell_id": 10,
+        "name": "Тюрьма",
+        "type": "jail_visit",
+        "property_id": null,
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 10,
+        "side": 1
+      },
+      {
+        "cell_id": 11,
+        "name": "Золушка",
+        "type": "property",
+        "property_id": "zolushka",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 9,
+        "side": 1
+      },
+      {
+        "cell_id": 12,
+        "name": "Электростанция",
+        "type": "property",
+        "property_id": "utility_1",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 8,
+        "side": 1
+      },
+      {
+        "cell_id": 13,
+        "name": "Дюймовочка",
+        "type": "property",
+        "property_id": "duymovochka",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 7,
+        "side": 1
+      },
+      {
+        "cell_id": 14,
+        "name": "Белоснежка",
+        "type": "property",
+        "property_id": "belosnezhka",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 6,
+        "side": 1
+      },
+      {
+        "cell_id": 15,
+        "name": "Железнодорожная станция",
+        "type": "property",
+        "property_id": "railroad_2",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 5,
+        "side": 1
+      },
+      {
+        "cell_id": 16,
+        "name": "Русалочка",
+        "type": "property",
+        "property_id": "rusalochka",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 4,
+        "side": 1
+      },
+      {
+        "cell_id": 17,
+        "name": "Шанс",
+        "type": "chance",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "chance"},
+        "position_x": 0,
+        "position_y": 3,
+        "side": 1
+      },
+      {
+        "cell_id": 18,
+        "name": "Снежная королева",
+        "type": "property",
+        "property_id": "snezhnaya_koroleva",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 2,
+        "side": 1
+      },
+      {
+        "cell_id": 19,
+        "name": "Золотой ключик",
+        "type": "property",
+        "property_id": "zolotoy_kluchik",
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 1,
+        "side": 1
+      },
+      {
+        "cell_id": 20,
+        "name": "Бесплатная парковка",
+        "type": "free_parking",
+        "property_id": null,
+        "action": null,
+        "action_data": {},
+        "position_x": 0,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 21,
+        "name": "Маугли",
+        "type": "property",
+        "property_id": "maugli",
+        "action": null,
+        "action_data": {},
+        "position_x": 1,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 22,
+        "name": "Фонд",
+        "type": "fund",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "fund"},
+        "position_x": 2,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 23,
+        "name": "Буратино",
+        "type": "property",
+        "property_id": "buratino",
+        "action": null,
+        "action_data": {},
+        "position_x": 3,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 24,
+        "name": "Чиполлино",
+        "type": "property",
+        "property_id": "chipollino",
+        "action": null,
+        "action_data": {},
+        "position_x": 4,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 25,
+        "name": "Железнодорожная станция",
+        "type": "property",
+        "property_id": "railroad_3",
+        "action": null,
+        "action_data": {},
+        "position_x": 5,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 26,
+        "name": "Карлсон",
+        "type": "property",
+        "property_id": "karlson",
+        "action": null,
+        "action_data": {},
+        "position_x": 6,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 27,
+        "name": "Винни-Пух",
+        "type": "property",
+        "property_id": "vinni_puh",
+        "action": null,
+        "action_data": {},
+        "position_x": 7,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 28,
+        "name": "Водопроводная станция",
+        "type": "property",
+        "property_id": "utility_2",
+        "action": null,
+        "action_data": {},
+        "position_x": 8,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 29,
+        "name": "Незнайка",
+        "type": "property",
+        "property_id": "neznayka",
+        "action": null,
+        "action_data": {},
+        "position_x": 9,
+        "position_y": 0,
+        "side": 2
+      },
+      {
+        "cell_id": 30,
+        "name": "Отправляйся в тюрьму",
+        "type": "go_to_jail",
+        "property_id": null,
+        "action": "go_to_jail",
+        "action_data": {"jail_cell_id": 10},
+        "position_x": 10,
+        "position_y": 0,
+        "side": 3
+      },
+      {
+        "cell_id": 31,
+        "name": "Колобок",
+        "type": "property",
+        "property_id": "kolobok",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 1,
+        "side": 3
+      },
+      {
+        "cell_id": 32,
+        "name": "Царевна-лягушка",
+        "type": "property",
+        "property_id": "tsarevna_lyagushka",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 2,
+        "side": 3
+      },
+      {
+        "cell_id": 33,
+        "name": "Шанс",
+        "type": "chance",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "chance"},
+        "position_x": 10,
+        "position_y": 3,
+        "side": 3
+      },
+      {
+        "cell_id": 34,
+        "name": "Иван-царевич",
+        "type": "property",
+        "property_id": "ivan_tsarevich",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 4,
+        "side": 3
+      },
+      {
+        "cell_id": 35,
+        "name": "Железнодорожная станция",
+        "type": "property",
+        "property_id": "railroad_4",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 5,
+        "side": 3
+      },
+      {
+        "cell_id": 36,
+        "name": "Фонд",
+        "type": "fund",
+        "property_id": null,
+        "action": "draw_card",
+        "action_data": {"card_type": "fund"},
+        "position_x": 10,
+        "position_y": 6,
+        "side": 3
+      },
+      {
+        "cell_id": 37,
+        "name": "Василиса Прекрасная",
+        "type": "property",
+        "property_id": "vasilisa_prekrasnaya",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 7,
+        "side": 3
+      },
+      {
+        "cell_id": 38,
+        "name": "Сверхналог",
+        "type": "tax",
+        "property_id": null,
+        "action": "pay_tax",
+        "action_data": {"amount": 75, "is_percentage": false},
+        "position_x": 10,
+        "position_y": 8,
+        "side": 3
+      },
+      {
+        "cell_id": 39,
+        "name": "Емеля",
+        "type": "property",
+        "property_id": "emelya",
+        "action": null,
+        "action_data": {},
+        "position_x": 10,
+        "position_y": 9,
+        "side": 3
+      }
+    ],
+    "special_cells": {
+      "veranda": {
+        "cell_id": "veranda",
+        "name": "Веранда",
+        "type": "veranda",
+        "action": "veranda_exit",
+        "action_data": {
+          "exit_cost": 50
+        },
+        "description": "Специальная клетка вне основного поля. Попасть можно только по карточке. Выход стоит 50$."
+      }
+    }
+  }
+}

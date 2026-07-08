@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "data": [
+    {
+      "card_id": "fund_01",
+      "card_type": "fund",
+      "title": "Сбор в фонд помощи",
+      "description": "Вы вносите вклад в общественный фонд. Заплатите 50$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 50
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_02",
+      "card_type": "fund",
+      "title": "Дивиденды",
+      "description": "Вы получаете дивиденды от банка. Получите 100$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 100
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_03",
+      "card_type": "fund",
+      "title": "Освобождение из тюрьмы",
+      "description": "Вы можете освободиться из тюрьмы бесплатно. Эту карточку можно сохранить, продать или использовать позже.",
+      "action_type": "get_out_of_jail",
+      "action_data": {},
+      "can_be_sold": true,
+      "keep_after_use": true
+    },
+    {
+      "card_id": "fund_04",
+      "card_type": "fund",
+      "title": "Отправляйтесь в тюрьму",
+      "description": "Отправляйтесь в тюрьму. Не проходите клетку «Старт», не получайте 200$.",
+      "action_type": "go_to_jail",
+      "action_data": {
+        "skip_start_bonus": true
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_05",
+      "card_type": "fund",
+      "title": "Стипендия",
+      "description": "Вы получили стипендию за отличную учёбу. Получите 150$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 150
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_06",
+      "card_type": "fund",
+      "title": "Медицинская страховка",
+      "description": "Пришло время оплатить медицинскую страховку. Заплатите 100$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 100
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_07",
+      "card_type": "fund",
+      "title": "Праздничный фейерверк",
+      "description": "Вы устроили праздничный фейерверк. Заплатите 25$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 25
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_08",
+      "card_type": "fund",
+      "title": "Премия от банка",
+      "description": "Банк выплачивает вам премию за долгосрочное сотрудничество. Получите 200$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 200
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_09",
+      "card_type": "fund",
+      "title": "Благотворительный взнос",
+      "description": "Сделайте благотворительный взнос. Заплатите 15$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 15
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_10",
+      "card_type": "fund",
+      "title": "Продажа урожая",
+      "description": "Вы продали богатый урожай с вашего участка. Получите 75$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 75
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_11",
+      "card_type": "fund",
+      "title": "Возврат долга",
+      "description": "Вам вернули старый долг. Получите 50$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 50
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_12",
+      "card_type": "fund",
+      "title": "Налог на имущество",
+      "description": "Пришло время платить налог на имущество. Заплатите 40$ за каждый дом и 115$ за каждый отель.",
+      "action_type": "repair_property",
+      "action_data": {
+        "cost_per_house": 40,
+        "cost_per_hotel": 115
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_13",
+      "card_type": "fund",
+      "title": "Поездка на Веранду",
+      "description": "Вы отправляетесь на Веранду! Чтобы выйти, нужно заплатить 50$ или использовать карточку.",
+      "action_type": "go_to_veranda",
+      "action_data": {},
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_14",
+      "card_type": "fund",
+      "title": "Вторая премия",
+      "description": "Вы заняли второе место в конкурсе. Получите 25$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 25
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_15",
+      "card_type": "fund",
+      "title": "Наследство от бабушки",
+      "description": "Бабушка оставила вам наследство. Получите 300$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 300
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "fund_16",
+      "card_type": "fund",
+      "title": "Штраф за шум",
+      "description": "Соседи пожаловались на шум. Заплатите штраф 30$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 30
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    }
+  ]
+}

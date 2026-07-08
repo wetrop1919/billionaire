@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "data": {
+    "hmac": {
+      "key_size": 32,
+      "hash_algorithm": "sha256"
+    },
+    "passwords": {
+      "algorithm": "argon2id",
+      "memory_cost_kb": 65536,
+      "time_cost": 3,
+      "parallelism": 4,
+      "hash_length": 32,
+      "salt_length": 16,
+      "min_length": 8,
+      "max_length": 128
+    },
+    "tokens": {
+      "access_token_expire_seconds": 3600,
+      "refresh_token_expire_seconds": 2592000,
+      "session_token_size": 32
+    },
+    "login": {
+      "max_attempts": 5,
+      "block_time_seconds": 300,
+      "min_username_length": 3,
+      "max_username_length": 32
+    },
+    "packet": {
+      "timestamp_tolerance_seconds": 30.0,
+      "max_payload_size": 524288,
+      "compression_threshold": 512
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "data": [
+    {
+      "card_id": "chance_01",
+      "card_type": "chance",
+      "title": "Банковская ошибка в вашу пользу",
+      "description": "Банк допустил ошибку в вашу пользу. Получите 200$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 200
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_02",
+      "card_type": "chance",
+      "title": "Штраф за превышение скорости",
+      "description": "Вы превысили скорость. Заплатите штраф 15$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 15
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_03",
+      "card_type": "chance",
+      "title": "Освобождение из тюрьмы",
+      "description": "Вы можете освободиться из тюрьмы бесплатно. Эту карточку можно сохранить, продать или использовать позже.",
+      "action_type": "get_out_of_jail",
+      "action_data": {},
+      "can_be_sold": true,
+      "keep_after_use": true
+    },
+    {
+      "card_id": "chance_04",
+      "card_type": "chance",
+      "title": "Отправляйтесь в тюрьму",
+      "description": "Отправляйтесь в тюрьму. Не проходите клетку «Старт», не получайте 200$.",
+      "action_type": "go_to_jail",
+      "action_data": {
+        "skip_start_bonus": true
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_05",
+      "card_type": "chance",
+      "title": "Перейдите на клетку «Старт»",
+      "description": "Перейдите на клетку «Старт». Получите 200$.",
+      "action_type": "move_to",
+      "action_data": {
+        "cell_id": 0,
+        "collect_start_bonus": true
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_06",
+      "card_type": "chance",
+      "title": "Наследство",
+      "description": "Вы получили наследство от дальнего родственника. Получите 100$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 100
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_07",
+      "card_type": "chance",
+      "title": "День рождения",
+      "description": "У вас день рождения! Получите 10$ с каждого игрока.",
+      "action_type": "birthday",
+      "action_data": {
+        "amount_per_player": 10
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_08",
+      "card_type": "chance",
+      "title": "Ремонт квартиры",
+      "description": "Вам необходимо сделать ремонт. Заплатите 25$ за каждый дом и 100$ за каждый отель.",
+      "action_type": "repair_property",
+      "action_data": {
+        "cost_per_house": 25,
+        "cost_per_hotel": 100
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_09",
+      "card_type": "chance",
+      "title": "Штраф за нарушение",
+      "description": "Вы нарушили правила. Заплатите штраф 50$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 50
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_10",
+      "card_type": "chance",
+      "title": "Лотерейный билет",
+      "description": "Ваш лотерейный билет выиграл! Получите 50$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 50
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_11",
+      "card_type": "chance",
+      "title": "Возврат налогов",
+      "description": "Вам вернули переплаченные налоги. Получите 150$.",
+      "action_type": "receive_money",
+      "action_data": {
+        "amount": 150
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_12",
+      "card_type": "chance",
+      "title": "Штраф за парковку",
+      "description": "Вы припарковались в неположенном месте. Заплатите штраф 25$.",
+      "action_type": "pay_money",
+      "action_data": {
+        "amount": 25
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_13",
+      "card_type": "chance",
+      "title": "Поездка на Веранду",
+      "description": "Вы отправляетесь на Веранду! Чтобы выйти, нужно заплатить 50$ или использовать карточку.",
+      "action_type": "go_to_veranda",
+      "action_data": {},
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_14",
+      "card_type": "chance",
+      "title": "Покиньте Веранду",
+      "description": "Вы можете покинуть Веранду бесплатно.",
+      "action_type": "leave_veranda",
+      "action_data": {},
+      "can_be_sold": true,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_15",
+      "card_type": "chance",
+      "title": "Вперёд на 3 шага",
+      "description": "Переместитесь на 3 шага вперёд.",
+      "action_type": "move_steps",
+      "action_data": {
+        "steps": 3
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    },
+    {
+      "card_id": "chance_16",
+      "card_type": "chance",
+      "title": "Назад на 2 шага",
+      "description": "Переместитесь на 2 шага назад.",
+      "action_type": "move_steps",
+      "action_data": {
+        "steps": -2
+      },
+      "can_be_sold": false,
+      "keep_after_use": false
+    }
+  ]
+}
