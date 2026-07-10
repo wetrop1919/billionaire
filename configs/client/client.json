@@ -2,7 +2,7 @@
   "version": 1,
   "data": {
     "server": {
-      "host": "localhost",
+      "host": "103.249.132.41",
       "port": 8443,
       "ssl_enabled": true,
       "ssl_verify": true

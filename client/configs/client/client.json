@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "data": {
+    "server": {
+      "host": "localhost",
+      "port": 8443,
+      "ssl_enabled": true,
+      "ssl_verify": true
+    },
+    "interface": {
+      "language": "ru",
+      "theme": "light",
+      "window": {
+        "min_width": 1024,
+        "min_height": 768,
+        "start_maximized": false
+      }
+    },
+    "audio": {
+      "enabled": true,
+      "music_volume": 50,
+      "effects_volume": 70
+    },
+    "network": {
+      "auto_reconnect": true,
+      "max_reconnect_attempts": 5,
+      "reconnect_delay_seconds": 3.0,
+      "heartbeat_interval_seconds": 10.0,
+      "connection_timeout_seconds": 10.0
+    },
+    "chat": {
+      "show_timestamps": true,
+      "max_history_display": 200
+    },
+    "notifications": {
+      "show_system_messages": true,
+      "auto_close_delay_seconds": 5
+    }
+  }
+}

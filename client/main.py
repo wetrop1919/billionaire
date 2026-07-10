@@ -8,13 +8,17 @@ client/main.py
 
 Python: 3.13+
 """
+import sys
+from pathlib import Path
 
-from __future__ import annotations
+# Добавляем корень проекта в PYTHONPATH
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 
 import asyncio
 import logging
 import signal
-import sys
+import sys as _sys
 from typing import Optional
 
 from PySide6.QtWidgets import QApplication
