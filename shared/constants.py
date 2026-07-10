@@ -126,7 +126,7 @@ TIMESTAMP_SIZE: int = 8
 HMAC_SIZE: int = 32
 
 # Общий размер заголовка пакета в байтах
-PACKET_HEADER_SIZE: int = 26
+PACKET_HEADER_SIZE: int = 20
 
 
 # ============================================================================

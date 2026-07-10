@@ -40,6 +40,7 @@ from shared.protocol.compression import Compressor
 
 logger = logging.getLogger("billionaire.client")
 
+_USE_SSL = False
 
 # ============================================================================
 # ТИПЫ ОБРАТНЫХ ВЫЗОВОВ
@@ -117,7 +118,7 @@ class NetworkClient:
         self,
         host: str = DEFAULT_SERVER_HOST,
         port: int = DEFAULT_SERVER_PORT,
-        use_ssl: bool = True,
+        use_ssl: bool = False,
     ) -> bool:
         """
         Подключиться к серверу.
@@ -147,7 +148,7 @@ class NetworkClient:
                 asyncio.open_connection(
                     host=host,
                     port=port,
-                    ssl=ssl_context,
+                    ssl=None,
                 ),
                 timeout=CONNECTION_TIMEOUT,
             )

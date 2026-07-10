@@ -15,11 +15,6 @@ alembic/env.py
 
 Python: 3.13+
 """
-import sys
-from pathlib import Path
-
-# Добавляем корень проекта в PYTHONPATH
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import asyncio
 from logging.config import fileConfig
@@ -30,13 +25,7 @@ from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 # Импорт Base и всех моделей для autogenerate
-try:
-    from database.models import Base
-except ImportError:
-    from sqlalchemy.orm import DeclarativeBase
-    class Base(DeclarativeBase):
-        pass
-    
+from database.models import Base
 from shared.env_config import load_env_config
 
 # Загрузка конфигурации Alembic

@@ -5,7 +5,7 @@
       "host": "103.249.132.41",
       "port": 8443,
       "ssl_enabled": true,
-      "ssl_verify": true
+      "ssl_verify": false
     },
     "interface": {
       "language": "ru",
@@ -13,45 +13,13 @@
       "window": {
         "min_width": 1024,
         "min_height": 768,
-        "start_maximized": false,
-        "remember_size": true,
-        "remember_position": true
-      },
-      "game_board": {
-        "size": 700,
-        "cell_size": 60,
-        "player_token_size": 24,
-        "animation_speed_ms": 300,
-        "show_coordinates": false
-      },
-      "panels": {
-        "player_panel_width": 300,
-        "chat_panel_height": 200,
-        "show_player_panel": true,
-        "show_chat_panel": true
+        "start_maximized": false
       }
     },
     "audio": {
       "enabled": true,
       "music_volume": 50,
-      "effects_volume": 70,
-      "dice_sound": true,
-      "move_sound": true,
-      "buy_sound": true,
-      "win_sound": true
-    },
-    "notifications": {
-      "show_system_messages": true,
-      "show_trade_offers": true,
-      "show_turn_notifications": true,
-      "show_auction_notifications": true,
-      "auto_close_delay_seconds": 5
-    },
-    "chat": {
-      "show_timestamps": true,
-      "show_system_messages": true,
-      "max_history_display": 200,
-      "font_size": 12
+      "effects_volume": 70
     },
     "network": {
       "auto_reconnect": true,
@@ -59,6 +27,14 @@
       "reconnect_delay_seconds": 3,
       "heartbeat_interval_seconds": 10,
       "connection_timeout_seconds": 10
+    },
+    "chat": {
+      "show_timestamps": true,
+      "max_history_display": 200
+    },
+    "notifications": {
+      "show_system_messages": true,
+      "auto_close_delay_seconds": 5
     }
   }
 }
