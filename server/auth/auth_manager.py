@@ -242,6 +242,10 @@ class AuthManager:
         # Сброс счётчика попыток
         self._login_attempts.pop(username, None)
 
+        # Гарантируем, что role - это enum перед сериализацией
+        if isinstance(user.role, str):
+            user.role = UserRole(user.role)
+
         # Создание токенов
         access_token, refresh_token, expires_in = self._token_manager.create_tokens(
             user_id=user.user_id,
@@ -325,6 +329,10 @@ class AuthManager:
         if user.is_banned:
             raise UserBannedError()
 
+        # Гарантируем, что role - это enum
+        if isinstance(user.role, str):
+            user.role = UserRole(user.role)
+
         # Отзываем старый access-токен
         self._token_manager.revoke_access_token(refresh_data.access_token)
 
@@ -359,6 +367,10 @@ class AuthManager:
         user = await self._user_repo.get_by_id(token_data.user_id)
         if user is None or user.is_banned:
             return None
+
+        # Гарантируем, что role - это enum перед возвращением
+        if isinstance(user.role, str):
+            user.role = UserRole(user.role)
 
         return user
 
