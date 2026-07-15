@@ -9,7 +9,7 @@
     },
     "interface": {
       "language": "ru",
-      "theme": "light",
+      "theme": "dark",
       "window": {
         "min_width": 1024,
         "min_height": 768,
