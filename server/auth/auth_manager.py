@@ -168,11 +168,17 @@ class AuthManager:
         # Хеширование пароля
         password_hash = await PasswordHasher.hash_password(password)
 
+        # Преобразуем role в UserRole enum (если это строка)
+        if isinstance(role, str):
+            user_role = UserRole(role)
+        else:
+            user_role = role
+
         # Создание пользователя
         user = User.create(
             username=username,
             password_hash=password_hash,
-            role=UserRole(role),
+            role=user_role,
         )
 
         # Сохранение в БД
@@ -181,7 +187,7 @@ class AuthManager:
         logger.info(
             "Зарегистрирован новый пользователь: %s (роль: %s)",
             username,
-            role,
+            user_role.value,
         )
 
         return saved_user
